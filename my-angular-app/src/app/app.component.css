@@ -1,0 +1,42 @@
+header {
+    background: url('../assets/images/fullstack-wallpaper.png') no-repeat top center ;
+    padding: 1rem 0;
+    background-size: cover;
+    height: 10em;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #444;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    color: #333;
+}
+  
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
