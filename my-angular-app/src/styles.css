@@ -7,10 +7,20 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    text-align: center;
+    background: url('assets/images/fullstack-wallpaper.png') no-repeat top center ;
     padding: 1rem 0;
+    background-size: cover;
+    height: 10em;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
 }
 
 nav ul {
@@ -36,16 +46,34 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
-h1, h2 {
-    color: #333;
+.contact-container {
+  flex-direction: row;
+  display: flex;
+  background-color: #e3dddd;
+  border-radius: 6px;
+  padding: 2.22222rem;
+}
+
+.contact-right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-right-section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
 }
 
 .social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.73rem;
-    margin-top: 1.5rem;
-  }
+  display: flex;
+  align-items: center;
+  gap: 0.73rem;
+  padding: 1.5rem;
+}
 
   .social-links path {
     transition: fill 0.3s ease;
