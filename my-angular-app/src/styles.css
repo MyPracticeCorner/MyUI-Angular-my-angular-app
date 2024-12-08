@@ -86,12 +86,11 @@ section {
       position: relative;
   }
 
-  .form-checkbox input {
+.form-checkbox input {
       height: 1.5em;
       width: 20px;
       left: 0;
       position: absolute;
-  }
 }
 
 .contact-right-section {
