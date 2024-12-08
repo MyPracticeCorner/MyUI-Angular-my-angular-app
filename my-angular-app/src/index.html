@@ -5,7 +5,7 @@
   <title>Sachin Kumar - Full Stack .NET Developer</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="sachinfavicon.ico">
 </head>
 <body>
 
@@ -51,9 +51,40 @@
 </section>
 <section id="contact">
     <h2>Contact</h2>
-
-    <div class="contact-container">   
-
+  
+    <div class="contact-container">
+      <div class="contact-left-section">
+        <form name="contact-form" id="contact-form" action="/thank-you" method="POST">
+          <div class="form-content">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input id="name" type="text" name="name" aria-labelledby="name-label" placeholder="Your name" required="">
+            </div>
+            <div class="form-group">
+              <label id="phone-label" for="phone">Phone</label>
+              <input id="phone" type="text" name="phone" aria-labelledby="phone-label" placeholder="Your phone">
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input id="email" type="email" name="email" aria-labelledby="email-label" placeholder="Your email address" required="">
+            </div>
+            <div class="form-group">
+              <label id="message-label" for="message">Message</label>
+              <textarea id="message" name="message" rows="5" aria-labelledby="message-label" placeholder="Your message"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-checkbox">
+                <input id="consent" type="checkbox" name="consent" aria-labelledby="consent-label" required="">
+                <label for="consent" id="consent-label">I understand that this form is storing my submitted information so I can be contacted.</label>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn--primary">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
       <div class="contact-right-section">
         <div class="contact-right-section-item">
           <b>Email</b>
@@ -62,24 +93,37 @@
         <div class="contact-right-section-item">
           <b>LinkedIn</b>
           <a href="https://www.linkedin.com/in/sachin-kumar-76109269/">linkedin.com/in/sachinkumar</a>
-        </div>        
+        </div>
         <div class="contact-right-section-item">
           <b>GitHub</b>
           <a href="https://github.com/sachinidea45">github.com/sachinkumar</a>
         </div>
 
         <div class="social-links">
-          <a href="mailto:sachinidea45@gmail.com" target="_blank" aria-label="Gmail">
-            <img style="width: 30px;" src="https://logo.clearbit.com/gmail.com" alt="gmail">
+          <a href="https://x.com/sachinidea45" target="_blank" aria-label="Twitter">
+            <img src="https://logo.clearbit.com/twitter.com" alt="twitter">
           </a>
-          <a href="https://www.linkedin.com/in/sachin-kumar-76109269/" target="_blank" aria-label="Linkedin">
-            <img style="width: 30px;" src="https://logo.clearbit.com/linkedin.com" alt="linkedin">
+          <a href="https://www.instagram.com/sachinidea45/" aria-label="Instagram">
+            <img src="https://logo.clearbit.com/instagram.com" alt="instagram">
           </a>
-          <a href="https://github.com/sachinidea45" target="_blank" aria-label="Github">
-            <img style="width: 30px;" src="https://logo.clearbit.com/github.com" alt="github">
+          <a href="https://www.facebook.com/ashambhavaha" aria-label="Facebook">
+            <img src="https://logo.clearbit.com/facebook.com" alt="facebook">
           </a>
         </div>
 
+        <div class="social-links">
+          <a href="mailto:sachinidea45@gmail.com" target="_blank" aria-label="Gmail">
+            <img src="https://logo.clearbit.com/gmail.com" alt="gmail">
+          </a>
+          <a href="mailto:sachinidea221092@outlook.com" target="_blank" aria-label="Outlook">
+            <img src="https://logo.clearbit.com/outlook.com" alt="outlook">
+          </a>
+          <a href="https://www.linkedin.com/in/sachin-kumar-76109269/" aria-label="Linkedin">
+            <img src="https://logo.clearbit.com/linkedin.com" alt="linkedin">
+          </a>
+          <a href="https://github.com/sachinidea45" target="_blank" aria-label="Github">
+            <img src="https://logo.clearbit.com/github.com" alt="github">
+        </div>
       </div>
   </div>
 </section>
