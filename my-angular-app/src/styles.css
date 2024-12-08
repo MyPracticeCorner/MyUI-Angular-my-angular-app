@@ -47,12 +47,68 @@ section {
 }
 
 .contact-container {
-  flex-direction: row;
   display: flex;
   background-color: #e3dddd;
   border-radius: 6px;
   padding: 2.22222rem;
 }
+
+@media screen and (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+.contact-left-section {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+
+  .contact-left-section form {
+    padding: 1.25rem;
+  }
+
+  .form-content label {
+      font-weight: 700;
+  }
+
+  .form-content input, textarea {
+      background: #e8eef4;
+      border: 1px solid #eceef1;
+      border-radius: 6px;
+      padding: .5em;
+      width: 100%;
+  }
+
+  .form-checkbox {
+      padding-left: 1.5em;
+      position: relative;
+  }
+
+  .form-checkbox input {
+      height: 1.5em;
+      width: 20px;
+      left: 0;
+      position: absolute;
+  }
+
+  .form-checkbox label {
+      float: left;
+      padding-left: 0.4rem;
+      font-weight: 400;
+      margin-bottom: .3em;
+   }
+
+  .form-submit button {
+      background-color: #e3dddd;
+      border-radius: 1.875em;
+      border: 0;
+      cursor: pointer;
+      font-size: .88889em;
+      font-weight: 700;
+      padding: .75em 1.875em;
+  }
 
 .contact-right-section {
   flex: 1;
@@ -75,13 +131,8 @@ section {
   padding: 1.5rem;
 }
 
-  .social-links path {
-    transition: fill 0.3s ease;
-    fill: var(--gray-400);
-  }
-
-  .social-links a:hover svg path {
-    fill: var(--gray-900);
+.social-links a img {
+    width: 30px;
   }
   
 footer {
