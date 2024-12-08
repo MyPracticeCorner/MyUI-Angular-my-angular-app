@@ -54,8 +54,14 @@
   
     <div class="contact-container">
       <div class="contact-left-section">
-        <form name="contact-form" id="contact-form" action="/thank-you" method="POST">
+        <form name="contact-form" id="contact-form" action="#about" method="POST"
+          netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
           <div class="form-content">
+            <p class="hidden" style="display: none;">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
             <div class="form-group">
               <label id="name-label" for="name">Name</label>
               <input id="name" type="text" name="name" aria-labelledby="name-label" placeholder="Your name" required="">
@@ -78,6 +84,7 @@
                 <label for="consent" id="consent-label">I understand that this form is storing my submitted information so I can be contacted.</label>
               </div>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <div class="form-submit">
               <button type="submit" class="btn btn--primary">Send Message</button>
             </div>
