@@ -12,7 +12,7 @@
     </ul>
 </nav>
 <h1>Full Stack .NET Developer | 10+ Years of Experience</h1>
-<main>
+<main appDisableRightClick>
    <app-home *ngIf="!isContactFormSubmitted" (sendMessageOnClick)="resetIsContactFormSubmitted()"></app-home>
   <app-thank-you *ngIf="isContactFormSubmitted"></app-thank-you> 
   <p id="messageTextElement" style="display: none;">Thank you for contacting me. I will get back in touch with you soon. Have a great day!</p>
