@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
@@ -13,8 +13,14 @@ import { DisableRightClickDirective } from '../directive/disable-right-click.dir
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  isSticky = false;
   isContactFormSubmitted = false;
   title = 'my-angular-app from sachinidea45 ng build --prod';
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isSticky = window.pageYOffset > 100;  // Adjust 100 as per your requirement
+  }
 
   resetIsContactFormSubmitted() {
     this.isContactFormSubmitted = !(this.isContactFormSubmitted);

@@ -5,6 +5,15 @@ header {
     height: 10em;
 }
 
+.sticky {
+  position: fixed; /* Fixes the header at the top of the page */
+  background-color: #E3DDDE;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
 h1 {
     color: #333;
     text-align: center;
