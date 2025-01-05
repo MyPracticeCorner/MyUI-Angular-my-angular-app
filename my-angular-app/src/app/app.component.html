@@ -1,6 +1,7 @@
 <header>    
 </header>
-<h1 href="/">Sachin Kumar</h1>
+<section [ngClass]="{'sticky': isSticky}">
+    <h1 href="/">Sachin Kumar</h1>
 <nav>
     <ul>
         <li><a href="#about">About</a></li>
@@ -12,6 +13,8 @@
     </ul>
 </nav>
 <h1>Full Stack .NET Developer | 10+ Years of Experience</h1>
+</section>
+
 <main appDisableRightClick>
    <app-home *ngIf="!isContactFormSubmitted" (sendMessageOnClick)="resetIsContactFormSubmitted()"></app-home>
   <app-thank-you *ngIf="isContactFormSubmitted"></app-thank-you> 
