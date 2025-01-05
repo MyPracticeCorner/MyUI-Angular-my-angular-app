@@ -3,6 +3,16 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+.hover-div {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition */
+}
+
+.hover-div:hover {
+  background-color: #007BFF;  /* Background color when hovered */
+  color: white;                /* Text color when hovered */
+}
+
 .flex-container {
   display: flex;
   justify-content: space-evenly;
