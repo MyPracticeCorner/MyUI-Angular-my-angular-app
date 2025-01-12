@@ -2,12 +2,13 @@ import { Component, HostListener } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { MyAppComponent } from './MyAppComponent/my.app.component'
 import { CommonModule } from '@angular/common';
 import { DisableRightClickDirective } from '../directive/disable-right-click.directive';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, HomeComponent, ThankYouComponent, DisableRightClickDirective],
+  imports: [CommonModule, HomeComponent, ThankYouComponent, DisableRightClickDirective, MyAppComponent],
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

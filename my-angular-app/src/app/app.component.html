@@ -16,10 +16,11 @@
 </section>
 
 <main appDisableRightClick>
-   <app-home *ngIf="!isContactFormSubmitted" (sendMessageOnClick)="resetIsContactFormSubmitted()"></app-home>
-  <app-thank-you *ngIf="isContactFormSubmitted"></app-thank-you> 
+  <my-app></my-app>
+  <app-home *ngIf="!isContactFormSubmitted" (sendMessageOnClick)="resetIsContactFormSubmitted()"></app-home>
+  <app-thank-you *ngIf="isContactFormSubmitted"></app-thank-you>
   <p id="messageTextElement" style="display: none;">Thank you for contacting me. I will get back in touch with you soon. Have a great day!</p>
-  
+
 </main>
 <footer>
     <p>© 2025 Sachin Kumar. All rights reserved.</p>
