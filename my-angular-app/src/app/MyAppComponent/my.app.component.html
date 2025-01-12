@@ -1,0 +1,12 @@
+<div>    
+    <ul>
+        @for (weather of weatherForecastData; track weather) {
+        <li>
+            <div>DATE: {{ weather.date }}</div>
+            <div>TEMPERATUREC: {{weather.temperatureC}}</div>
+            <div>TEMPERATUREF: {{weather.temperatureF}}</div>
+            <div>SUMMARY: {{weather.summary}}</div>
+        </li>
+        }
+    </ul>
+</div>
